@@ -1,0 +1,12 @@
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+html,body{
+  font-family: 'Open Sans Hebrew';
+  position: relative;
+  overflow: auto;
+  flex-direction: column;
+  direction: rtl;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+

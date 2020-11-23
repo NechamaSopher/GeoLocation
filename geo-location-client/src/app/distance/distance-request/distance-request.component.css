@@ -1,0 +1,54 @@
+.distance-req {
+  position: absolute;
+  height: 200px;
+  width: 300px;
+  top: 100px;
+  left: 45%;
+}
+
+mat-label {
+  color: #404040;
+  margin: auto;
+}
+
+input {
+  font-family: "Open Sans Hebrew";
+  height: 40px;
+  width: 350px;
+  color: #000;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input:focus {
+  outline: none;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+}
+hr {
+  border: none;
+  border-top: 3px dotted #d9d9d9;
+  margin: 20px;
+  width: 200px;
+  float: left;
+}
+.btn {
+  font-family: "Open Sans Hebrew";
+  color: #ffff;
+  background-color: #e01e4c;
+  height: 40px;
+  width: 350px;
+  margin-top: 10px;
+}
+.error-msg {
+  color: red;
+  font-weight: 400px;
+}
+
+@media only screen and (max-width: 600px) {
+  .distance-req {
+    left: 15%;
+  }
+}

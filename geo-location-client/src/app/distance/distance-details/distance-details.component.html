@@ -1,0 +1,42 @@
+<div class="details" *ngIf="globals.distance">
+  <button mat-raised-button class="btn" (click)="onClicked()">סיום</button>
+  <div class="conent">
+    <div class="wrapper">
+      <div>
+        <mat-label> המרחק בק"מ</mat-label>
+        <br />
+        <span class="number">{{ globals.distance }}</span>
+      </div>
+      <div class="vl"></div>
+      <div *ngIf="popularSearch">
+        <mat-label>המרחק הפופולרי ביותר</mat-label>
+        <br />
+        <span class="number">{{ popularSearch.hits }}</span
+        ><span class="small"> בקשות </span>
+        <p class="small p">
+          {{ popularSearch.source }} <span class="s"> | </span>
+          {{ popularSearch.destination }}
+        </p>
+      </div>
+    </div>
+    <div>
+      <mat-label>רשימת התוצאות הפופולריות</mat-label>
+      <div *ngFor="let item of popularSearches">
+        <mat-card>
+          <div>
+            <mat-card-title>{{ item.source }}</mat-card-title>
+            <mat-card-subtitle>מוצא</mat-card-subtitle>
+          </div>
+          <div>
+            <mat-card-title>{{ item.destination }}</mat-card-title>
+            <mat-card-subtitle>יעד</mat-card-subtitle>
+          </div>
+          <div class="float">
+            <mat-card-title>{{ item.hits }}</mat-card-title>
+            <mat-card-subtitle>בקשות</mat-card-subtitle>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
